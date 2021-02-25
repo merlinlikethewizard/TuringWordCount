@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title></title>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/gif" href="https://cs.marlboro.college/cours/static/images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="8_files/umber.css">
+  <link rel="stylesheet" type="text/css" href="8_files/pygment.css">
+  <script type="text/javascript" src="8_files/jquery-3.js" defer="defer"></script>
+  <script type="text/javascript" src="8_files/underscore-min.js" defer="defer"></script>
+  
+  
+  
+  <script type="text/javascript" async="" src="8_files/MathJax.js">
+  </script>
+
+  
+  <script src="8_files/dropzone.js" defer="defer"></script>
+  <link rel="stylesheet" href="8_files/dropzone_modified.css">
+
+  <script type="text/javascript" src="8_files/umber.js" defer="defer"></script>
+	  
+<style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1px; bottom: 2px; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+<body class="vsc-initialized"><div id="MathJax_Message" style="display: none;"></div>
+<div id="header">
+  <a id="cs-logo" href="https://cs.marlboro.college/"><img src="8_files/cs_m_edu.png" alt="computer science @ marlboro.college"></a>
+  <!-- start login -->
+<div id="login">
+<form class="login" name="login" method="POST" action="https://cs.marlboro.college/cours/spring2018/workshop/students/mkatz/work/8">
+  <ul>
+  
+    <li class="first student">mkatz</li>
+    <li class="middle">student</li>
+    
+    <li class="rest"><a href="https://cs.marlboro.college/cours/spring2018/workshop/sys/user">profile</a></li>
+    
+    <li class="rest"><input name="submit_logout" type="submit" value="log out"></li>
+  
+  </ul>
+</form>
+
+  
+  
+  <div class="error"> &nbsp; </div>
+  
+
+</div>
+<!-- end login -->
+</div>
+<!-- row of action buttons (tabs) for edit, history, and revisions -->
+
+<div id="actions">
+  <ul>
+  
+  
+  
+    <li class="behind"><a href="https://cs.marlboro.college/cours/spring2018/workshop/students/mkatz/work/8?action=edit">edit</a></li>
+  
+  
+  
+  
+    <li class="behind"><a href="https://cs.marlboro.college/cours/spring2018/workshop/students/mkatz/work/8?action=history">history</a></li>
+  
+  
+      
+  
+  </ul>
+</div>
+ 
+<div id="column-one">
+ <h1><a href="https://cs.marlboro.college/cours/spring2018/workshop/home"> Programming<br>Workshop </a></h1>
+  
+ <div><div id="semester"> Spring 2018 </div></div>
+ 
+ <div><!-- navigation menu -->
+<div access="all">
+<h5>course</h5>
+<div markdown="1"><ul>
+<li><a href="https://cs.marlboro.college/cours/spring2018/workshop/home">home</a></li>
+<li><a href="https://cs.marlboro.college/cours/spring2018/workshop/syllabus">syllabus</a></li>
+<li><a href="https://cs.marlboro.college/cours/spring2018/workshop/resources">resources</a></li>
+<li><a href="https://cs.marlboro.college/cours/spring2018/workshop/notes/home">class notes</a></li>
+<li><a href="https://cs.marlboro.college/cours/spring2018/workshop/sys/assignments">assignments</a></li>
+</ul>
+</div>
+</div>
+<div access="student">
+<h5>student</h5>
+<div markdown="1"><ul>
+<li><a href="https://cs.marlboro.college/cours/spring2018/workshop/sys/roster">roster</a></li>
+<li><a href="https://cs.marlboro.college/cours/spring2018/workshop/protected/github">github</a></li>
+<li><a href="http://csmarlboro.org/tron">tron</a></li>
+<li><a href="https://cs.marlboro.college/cours/spring2018/workshop/sys/grades">grades</a></li>
+</ul>
+</div>
+</div>
+<div access="all">
+<h5>site</h5>
+<div markdown="1"><ul>
+<li><a href="https://cs.marlboro.college/cours/site/docs/help">help</a></li>
+<li><a href="https://cs.marlboro.college/cours/site/docs/about">about</a></li>
+<li><a href="https://cs.marlboro.college/cours/spring2018/workshop/students/mkatz/">..</a></li>
+<li><a href="https://cs.marlboro.college/cours/spring2018/workshop/students/mkatz/work/">.</a></li>
+</ul>
+</div>
+</div>
+</div>
+  
+ <div>
+  <a href="http://www.marlboro.edu/"><img id="mc-logo" alt="Marlboro College" src="8_files/deadtree_lightdarkbackground.png"></a>
+ </div>
+</div>
+<div id="column-two">
+  <div class="component">
+  
+
+
+    
+        
+<div class="grade-h1"><span class="grade">grade: 
+<span class="grade-black">1.0</span></span>&nbsp;</div>
+<h1><span class="assign-id">8.</span> <a href="https://cs.marlboro.college/cours/spring2018/workshop/sys/assignments#8">word counts</a><span id="workassignmentuser">Merlin Katz's work</span></h1>
+<p class="duesubmit">
+  <span class="grey">due:</span> Mon Apr 9<br>
+  
+  <span class="grey">in:</span>
+  
+    Sat Apr 7 7:24 am
+  
+  <br>
+
+</p>
+    
+    <h2>Jim says</h2>
+
+<p>I see it, but am not sure that I believe it. :)</p>
+
+<p>I'm not sure I understand yet the logic behind the rule generation - 
+I look forward to your explanation in class.</p>
+
+<h2>TuringMachine Class</h2>
+
+<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="nc">TuringMachine</span><span class="p">:</span>
+    <span class="sd">'''</span>
+<span class="sd">    A real live Turing Machine! Minus the infinate tape.</span>
+
+<span class="sd">    Creates a model of a Turing Machine with &lt;rules&gt;, &lt;start_state&gt;,</span>
+<span class="sd">    &lt;start_index&gt;, &lt;default_slot_value&gt;, and &lt;start_tape&gt;.</span>
+
+<span class="sd">    &gt;&gt;&gt; rules = []</span>
+
+<span class="sd">    &gt;&gt;&gt;              # Curr. | Read  | New   | Write | Move  </span>
+<span class="sd">    &gt;&gt;&gt;              # State | Value | State | Value | Dist. </span>
+<span class="sd">    &gt;&gt;&gt;              #-------|-------|-------|-------|-------</span>
+<span class="sd">    &gt;&gt;&gt; rules.append(( 'A'   , '0'   , 'A'   , '1'   , 1     ))</span>
+
+<span class="sd">    &gt;&gt;&gt; tm = TuringMachine(rules=rules, start_state='A')</span>
+
+<span class="sd">    &gt;&gt;&gt; for step_num in xrange(5):</span>
+<span class="sd">    ...     print tm</span>
+<span class="sd">    ...     tm.step()</span>
+<span class="sd">    ...     if step_num == 4:</span>
+<span class="sd">    ...         print tm</span>
+<span class="sd">    --- Step 0 ---</span>
+<span class="sd">     0 0 0 0 0 0 0 0 0&gt;0&lt;0 0 0 0 0 0 0 0 0</span>
+<span class="sd">    State: A</span>
+<span class="sd">    Index: 0</span>
+<span class="sd">    --- Step 1 ---</span>
+<span class="sd">     0 0 0 0 0 0 0 0 1&gt;0&lt;0 0 0 0 0 0 0 0 0</span>
+<span class="sd">    State: A</span>
+<span class="sd">    Index: 1</span>
+<span class="sd">    --- Step 2 ---</span>
+<span class="sd">     0 0 0 0 0 0 0 1 1&gt;0&lt;0 0 0 0 0 0 0 0 0</span>
+<span class="sd">    State: A</span>
+<span class="sd">    Index: 2</span>
+<span class="sd">    --- Step 3 ---</span>
+<span class="sd">     0 0 0 0 0 0 1 1 1&gt;0&lt;0 0 0 0 0 0 0 0 0</span>
+<span class="sd">    State: A</span>
+<span class="sd">    Index: 3</span>
+<span class="sd">    --- Step 4 ---</span>
+<span class="sd">     0 0 0 0 0 1 1 1 1&gt;0&lt;0 0 0 0 0 0 0 0 0</span>
+<span class="sd">    State: A</span>
+<span class="sd">    Index: 4</span>
+<span class="sd">    --- Step 5 ---</span>
+<span class="sd">     0 0 0 0 1 1 1 1 1&gt;0&lt;0 0 0 0 0 0 0 0 0</span>
+<span class="sd">    State: A</span>
+<span class="sd">    Index: 5</span>
+
+<span class="sd">    &gt;&gt;&gt; tm.get_whole_printout()</span>
+<span class="sd">    '11111'</span>
+
+<span class="sd">    '''</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rules</span><span class="p">,</span> <span class="n">start_state</span><span class="p">,</span> <span class="n">start_index</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">default_slot_value</span><span class="o">=</span><span class="s1">'0'</span><span class="p">,</span> <span class="n">start_tape</span><span class="o">=</span><span class="p">()):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">state</span> <span class="o">=</span> <span class="n">start_state</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">start_index</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">default_slot_value</span> <span class="o">=</span> <span class="n">default_slot_value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tape</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">enumerate</span><span class="p">(</span><span class="n">start_tape</span><span class="p">))</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">rules</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">current_state</span><span class="p">,</span> <span class="n">read_value</span><span class="p">,</span> <span class="n">new_state</span><span class="p">,</span> <span class="n">write_value</span><span class="p">,</span> <span class="n">move_dist</span> <span class="ow">in</span> <span class="n">rules</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">rules</span><span class="p">[(</span><span class="n">current_state</span><span class="p">,</span> <span class="n">read_value</span><span class="p">)]</span> <span class="o">=</span> <span class="p">(</span><span class="n">new_state</span><span class="p">,</span> <span class="n">write_value</span><span class="p">,</span> <span class="n">move_dist</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">steps</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">halt</span> <span class="o">=</span> <span class="bp">False</span>
+
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">index</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">tape</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tape</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">default_slot_value</span>
+
+    <span class="k">def</span> <span class="fm">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">value</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">default_slot_value</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">index</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">tape</span><span class="p">:</span>
+                <span class="k">del</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tape</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tape</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="s1">'--- Step {} ---</span><span class="se">\n</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">steps</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="o">-</span><span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">s</span> <span class="o">+=</span> <span class="s1">'&gt;'</span>
+            <span class="k">elif</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">s</span> <span class="o">+=</span> <span class="s1">'&lt;'</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">s</span> <span class="o">+=</span> <span class="s1">' '</span>
+            <span class="n">s</span> <span class="o">+=</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">index</span> <span class="o">+</span> <span class="n">i</span><span class="p">])</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">halt</span><span class="p">:</span>
+            <span class="n">s</span> <span class="o">+=</span> <span class="s1">' HALT'</span>
+        <span class="n">s</span> <span class="o">+=</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">State: '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">state</span><span class="p">)</span>
+        <span class="n">s</span> <span class="o">+=</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">Index: '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">s</span>
+
+    <span class="k">def</span> <span class="nf">step</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">halt</span><span class="p">:</span>
+            <span class="k">return</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">steps</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="n">sitch</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">state</span><span class="p">,</span> <span class="bp">self</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">index</span><span class="p">])</span>
+
+        <span class="k">if</span> <span class="n">sitch</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">rules</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">halt</span> <span class="o">=</span> <span class="bp">True</span>
+            <span class="k">return</span>
+
+        <span class="n">new_state</span><span class="p">,</span> <span class="n">write_value</span><span class="p">,</span> <span class="n">move_dist</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">rules</span><span class="p">[</span><span class="n">sitch</span><span class="p">]</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">state</span> <span class="o">=</span> <span class="n">new_state</span>
+        <span class="bp">self</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="n">write_value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">index</span> <span class="o">+=</span> <span class="n">move_dist</span>
+
+    <span class="k">def</span> <span class="nf">get_whole_printout</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="s1">''</span>
+        <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+            <span class="n">index</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="n">index</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">tape</span><span class="p">:</span>
+                <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="k">break</span>
+        <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">index</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">tape</span><span class="p">:</span>
+                <span class="n">s</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tape</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">s</span>
+            <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div>
+
+<h2>The Task</h2>
+
+<p>Read in a file, and return a sorted list of the 25 most commonly occurring words, ignoring stop words.</p>
+
+<h5>Stop words:</h5>
+
+<p>a, able, about, across, after, all, almost, also, am, among, an, and,
+ any, are, as, at, be, because, been, but, by, can, cannot, could, dear,
+ did, do, does, either, else, ever, every, for, from, get, got, had, 
+has, have, he, her, hers, him, his, how, however, i, if, in, into, is, 
+it, its, just, least, let, like, likely, may, me, might, most, must, my,
+ neither, no, nor, not, of, off, often, on, only, or, other, our, own, 
+rather, said, say, says, she, should, since, so, some, than, that, the, 
+their, them, then, there, these, they, this, tis, to, too, twas, us, 
+wants, was, we, were, what, when, where, which, while, who, whom, why, 
+will, with, would, yet, you, your</p>
+
+<h5>Basic process:</h5>
+
+<p>The input string is read from a file and placed on the tape starting 
+at index 0. The tm runs with the rules provided until halting. The 
+result is read off the tape. Here is the process that the machine will 
+follow:</p>
+
+<ul>
+<li>count occurrences of each word
+<ul>
+<li>create memory space at the end of the tape</li>
+<li>start at beginning of input string</li>
+<li>process each word
+<ul>
+<li>see if word is in memory yet
+<ul>
+<li>&gt; if it isn't, put it there and give it a counter 0001</li>
+<li>&gt; if it is, increment it's count by 1</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>mark common words to be ignored
+<ul>
+<li>use state tree on each word to determine if they're bad</li>
+</ul></li>
+<li>make a sorted list of 25 most commonly occurring words and their counts
+<ul>
+<li>create limit counter at the end of the tape - set to 24</li>
+<li>create max register at the end of the tape - set to 0000</li>
+<li>until 25 words are found or words run out: find the most common valid word and put it and its count at the end of the tape
+<ul>
+<li>start at beginning of memory space</li>
+<li>process each word, skipping invalid
+<ul>
+<li>check if word count is &gt; max register
+<ul>
+<li>&gt; if it is, set max register = word count, mark word as highest, and unmark the previous highest word</li>
+<li>&gt; if it isn't, go on the the next word</li>
+</ul></li>
+</ul></li>
+<li>go back to highest word</li>
+<li>copy to the end of tape along with count</li>
+<li>mark word as invalid (so it doesn't get counted again)</li>
+<li>decrement limit counter</li>
+<li>reset max register to 0000</li>
+</ul></li>
+</ul></li>
+<li>move the list to the start of the tape and clear everything else</li>
+</ul>
+
+<h5>Rule generation</h5>
+
+<p>The rule generator takes as arguments the set of characters that 
+might appear in the input string, and the stop words. It generates ~22k 
+rules for the tm.</p>
+
+<p>Rules are added in this form:</p>
+
+<div class="codehilite"><pre><span></span><code>             <span class="c1"># Curr. | Read  | New    | Write | Move  </span>
+             <span class="c1"># State | Value | State  | Value | Dist. </span>
+             <span class="c1">#-------|-------|--------|-------|-------</span>
+<span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span> <span class="n">state</span> <span class="p">,</span> <span class="n">char</span>  <span class="p">,</span> <span class="n">state2</span> <span class="p">,</span> <span class="n">char2</span>  <span class="p">,</span> <span class="mi">1</span> <span class="ow">or</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+</code></pre></div>
+
+<h2>frequency.py</h2>
+
+<p>Usage:</p>
+
+<pre><code>$ python frequency.py &lt;filename&gt; [-v] [-s] [-u]
+</code></pre>
+
+<ul>
+<li>-v: verbose</li>
+<li>-s: save rule printout to file rules.txt</li>
+<li>-u: user stepthrough</li>
+</ul>
+
+<p>The user stepthrough can be helpful in watching the thing go. 
+Pressing enter will step forward once, entering a number will step 
+forward that many times, and entering finish, fin, or f, will exit the 
+stepthrough and complete the process.</p>
+
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">string</span>
+<span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">time</span>
+<span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">argv</span>
+
+<span class="k">class</span> <span class="nc">TuringMachine</span><span class="p">:</span>
+    <span class="sd">'''</span>
+<span class="sd">    A real live Turing Machine! Minus the infinate tape.</span>
+
+<span class="sd">    Creates a model of a Turing Machine with &lt;rules&gt;, &lt;start_state&gt;,</span>
+<span class="sd">    &lt;start_index&gt;, &lt;default_slot_value&gt;, and &lt;start_tape&gt;.</span>
+
+<span class="sd">    &gt;&gt;&gt; rules = []</span>
+
+<span class="sd">    &gt;&gt;&gt;              # Curr. | Read  | New   | Write | Move  </span>
+<span class="sd">    &gt;&gt;&gt;              # State | Value | State | Value | Dist. </span>
+<span class="sd">    &gt;&gt;&gt;              #-------|-------|-------|-------|-------</span>
+<span class="sd">    &gt;&gt;&gt; rules.append(( 'A'   , '0'   , 'A'   , '1'   , 1     ))</span>
+
+<span class="sd">    &gt;&gt;&gt; tm = TuringMachine(rules=rules, start_state='A')</span>
+
+<span class="sd">    &gt;&gt;&gt; for step_num in xrange(5):</span>
+<span class="sd">    ...     print tm</span>
+<span class="sd">    ...     tm.step()</span>
+<span class="sd">    ...     if step_num == 4:</span>
+<span class="sd">    ...         print tm</span>
+<span class="sd">    --- Step 0 ---</span>
+<span class="sd">     0 0 0 0 0 0 0 0 0&gt;0&lt;0 0 0 0 0 0 0 0 0</span>
+<span class="sd">    State: A</span>
+<span class="sd">    Index: 0</span>
+<span class="sd">    --- Step 1 ---</span>
+<span class="sd">     0 0 0 0 0 0 0 0 1&gt;0&lt;0 0 0 0 0 0 0 0 0</span>
+<span class="sd">    State: A</span>
+<span class="sd">    Index: 1</span>
+<span class="sd">    --- Step 2 ---</span>
+<span class="sd">     0 0 0 0 0 0 0 1 1&gt;0&lt;0 0 0 0 0 0 0 0 0</span>
+<span class="sd">    State: A</span>
+<span class="sd">    Index: 2</span>
+<span class="sd">    --- Step 3 ---</span>
+<span class="sd">     0 0 0 0 0 0 1 1 1&gt;0&lt;0 0 0 0 0 0 0 0 0</span>
+<span class="sd">    State: A</span>
+<span class="sd">    Index: 3</span>
+<span class="sd">    --- Step 4 ---</span>
+<span class="sd">     0 0 0 0 0 1 1 1 1&gt;0&lt;0 0 0 0 0 0 0 0 0</span>
+<span class="sd">    State: A</span>
+<span class="sd">    Index: 4</span>
+<span class="sd">    --- Step 5 ---</span>
+<span class="sd">     0 0 0 0 1 1 1 1 1&gt;0&lt;0 0 0 0 0 0 0 0 0</span>
+<span class="sd">    State: A</span>
+<span class="sd">    Index: 5</span>
+
+<span class="sd">    &gt;&gt;&gt; tm.get_whole_printout()</span>
+<span class="sd">    '11111'</span>
+
+<span class="sd">    '''</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">rules</span><span class="p">,</span> <span class="n">start_state</span><span class="p">,</span> <span class="n">start_index</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">default_slot_value</span><span class="o">=</span><span class="s1">'0'</span><span class="p">,</span> <span class="n">start_tape</span><span class="o">=</span><span class="p">()):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">state</span> <span class="o">=</span> <span class="n">start_state</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="n">start_index</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">default_slot_value</span> <span class="o">=</span> <span class="n">default_slot_value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tape</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="nb">enumerate</span><span class="p">(</span><span class="n">start_tape</span><span class="p">))</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">rules</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">current_state</span><span class="p">,</span> <span class="n">read_value</span><span class="p">,</span> <span class="n">new_state</span><span class="p">,</span> <span class="n">write_value</span><span class="p">,</span> <span class="n">move_dist</span> <span class="ow">in</span> <span class="n">rules</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">rules</span><span class="p">[(</span><span class="n">current_state</span><span class="p">,</span> <span class="n">read_value</span><span class="p">)]</span> <span class="o">=</span> <span class="p">(</span><span class="n">new_state</span><span class="p">,</span> <span class="n">write_value</span><span class="p">,</span> <span class="n">move_dist</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">steps</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">halt</span> <span class="o">=</span> <span class="bp">False</span>
+
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">index</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">tape</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tape</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">default_slot_value</span>
+
+    <span class="k">def</span> <span class="fm">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">index</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">value</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">default_slot_value</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">index</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">tape</span><span class="p">:</span>
+                <span class="k">del</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tape</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tape</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="s1">'--- Step {} ---</span><span class="se">\n</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">steps</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="o">-</span><span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">s</span> <span class="o">+=</span> <span class="s1">'&gt;'</span>
+            <span class="k">elif</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">s</span> <span class="o">+=</span> <span class="s1">'&lt;'</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">s</span> <span class="o">+=</span> <span class="s1">' '</span>
+            <span class="n">s</span> <span class="o">+=</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">index</span> <span class="o">+</span> <span class="n">i</span><span class="p">])</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">halt</span><span class="p">:</span>
+            <span class="n">s</span> <span class="o">+=</span> <span class="s1">' HALT'</span>
+        <span class="n">s</span> <span class="o">+=</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">State: '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">state</span><span class="p">)</span>
+        <span class="n">s</span> <span class="o">+=</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">Index: '</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">s</span>
+
+    <span class="k">def</span> <span class="nf">step</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">halt</span><span class="p">:</span>
+            <span class="k">return</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">steps</span> <span class="o">+=</span> <span class="mi">1</span>
+
+        <span class="n">sitch</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">state</span><span class="p">,</span> <span class="bp">self</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">index</span><span class="p">])</span>
+
+        <span class="k">if</span> <span class="n">sitch</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">rules</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">halt</span> <span class="o">=</span> <span class="bp">True</span>
+            <span class="k">return</span>
+
+        <span class="n">new_state</span><span class="p">,</span> <span class="n">write_value</span><span class="p">,</span> <span class="n">move_dist</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">rules</span><span class="p">[</span><span class="n">sitch</span><span class="p">]</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">state</span> <span class="o">=</span> <span class="n">new_state</span>
+        <span class="bp">self</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="n">write_value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">index</span> <span class="o">+=</span> <span class="n">move_dist</span>
+
+    <span class="k">def</span> <span class="nf">get_whole_printout</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="s1">''</span>
+        <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+            <span class="n">index</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="n">index</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">tape</span><span class="p">:</span>
+                <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="k">break</span>
+        <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">index</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">tape</span><span class="p">:</span>
+                <span class="n">s</span> <span class="o">+=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tape</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">s</span>
+            <span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
+
+
+<span class="k">def</span> <span class="nf">getStopWordsRules</span><span class="p">(</span><span class="n">base_rule</span><span class="p">,</span> <span class="n">stop_words</span><span class="p">,</span> <span class="n">finish</span><span class="p">):</span>
+    <span class="n">rules</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">base_rule</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="n">base_rule</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="k">if</span> <span class="s1">''</span> <span class="ow">in</span> <span class="n">stop_words</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">base_rule</span><span class="p">,</span> <span class="s1">'#'</span><span class="p">,</span> <span class="n">finish</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span><span class="p">:</span>
+        <span class="n">word_group</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">stop_words</span> <span class="k">if</span> <span class="n">word</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">letter</span><span class="p">)]</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">word_group</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">base_rule</span><span class="p">,</span> <span class="n">letter</span><span class="p">,</span> <span class="n">base_rule</span> <span class="o">+</span> <span class="n">letter</span><span class="p">,</span> <span class="n">letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+            <span class="n">rules</span> <span class="o">+=</span> <span class="n">getStopWordsRules</span><span class="p">(</span><span class="n">base_rule</span> <span class="o">+</span> <span class="n">letter</span><span class="p">,</span> <span class="n">word_group</span><span class="p">,</span> <span class="n">finish</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">base_rule</span><span class="p">,</span> <span class="n">letter</span><span class="p">,</span> <span class="n">finish</span><span class="p">,</span> <span class="n">letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">rules</span>
+
+
+<span class="k">def</span> <span class="nf">generateRules</span><span class="p">(</span><span class="n">charset</span><span class="p">,</span> <span class="n">stop_words</span><span class="p">):</span>
+
+    <span class="c1">#############</span>
+    <span class="c1">### RULES #######################################################</span>
+    <span class="c1">#################################################################</span>
+    <span class="c1"># Curr. | Read  | New   | Write | Move  </span>
+    <span class="c1"># State | Value | State | Value | Dist. </span>
+    <span class="c1">#-------|-------|-------|-------|-------</span>
+
+    <span class="n">rules</span> <span class="o">=</span> <span class="p">[]</span>
+
+
+    <span class="c1">########################</span>
+    <span class="c1">### \/ Word count \/</span>
+
+
+    <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' '</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'scrub'</span><span class="p">,</span> <span class="n">letter</span><span class="p">,</span> <span class="s1">'scrub'</span><span class="p">,</span> <span class="n">letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'scrub'</span><span class="p">,</span> <span class="n">letter</span><span class="o">.</span><span class="n">upper</span><span class="p">(),</span> <span class="s1">'scrub'</span><span class="p">,</span> <span class="n">letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">charset</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="n">ascii_letters</span> <span class="o">+</span> <span class="s1">' '</span><span class="p">):</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'scrub'</span><span class="p">,</span> <span class="n">char</span><span class="p">,</span> <span class="s1">'scrub'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'scrub'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'mark_end'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'mark_end'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'cap_mem'</span><span class="p">,</span> <span class="s1">'$'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'cap_mem'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'go_mark_beginning'</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' $'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_mark_beginning'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_mark_beginning'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_mark_beginning'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'find_word'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'find_word'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">'find_word'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'find_word'</span><span class="p">,</span> <span class="n">letter</span><span class="p">,</span> <span class="s1">'go_match_letter_'</span> <span class="o">+</span> <span class="n">letter</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'find_letter'</span><span class="p">,</span> <span class="n">letter</span><span class="p">,</span> <span class="s1">'go_match_letter_'</span> <span class="o">+</span> <span class="n">letter</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">match_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' $-#0123456789~'</span><span class="p">:</span>
+            <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_match_letter_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_match_letter_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_match_letter_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="s1">'match_letter_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'match_letter_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="n">match_letter</span><span class="p">,</span> <span class="s1">'match_success_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="n">match_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'match_success_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="s1">'go_replace_letter_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' $-#0123456789~'</span><span class="p">:</span>
+            <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_replace_letter_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_replace_letter_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_replace_letter_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'find_letter'</span><span class="p">,</span> <span class="n">match_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'match_success_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="s1">'#'</span><span class="p">,</span> <span class="s1">'go_replace_letter_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="s1">'@'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_match_letter_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="s1">'@'</span><span class="p">,</span> <span class="s1">'match_failure_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="s1">'#'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_match_letter_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">,</span> <span class="s1">'new_word_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'match_letter_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">,</span> <span class="s1">'new_word_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' $-#0123456789~'</span><span class="p">:</span>
+            <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'new_word_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'new_word_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'new_word_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'new_word_reset'</span><span class="p">,</span> <span class="n">match_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+        <span class="k">for</span> <span class="n">mismatch_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">mismatch_letter</span> <span class="o">!=</span> <span class="n">match_letter</span><span class="p">:</span>
+                <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'match_letter_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="n">mismatch_letter</span><span class="p">,</span> <span class="s1">'match_failure_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="n">mismatch_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">match_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' '</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' $-#0123456789~'</span><span class="p">:</span>
+            <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'match_failure_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'match_failure_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'match_failure_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="s1">'~'</span><span class="p">,</span> <span class="s1">'new_match_mark_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="s1">'~'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'new_match_mark_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="s1">'new_match_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'new_match_mark_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">,</span> <span class="s1">'new_word_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' $-#0123456789~'</span><span class="p">:</span>
+            <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'new_match_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'new_match_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'new_match_'</span> <span class="o">+</span> <span class="n">match_letter</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'new_match_reset'</span><span class="p">,</span> <span class="n">match_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'new_word_reset'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'new_word_reset'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'new_word_reset'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">'new_word_copy'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'new_word_copy'</span><span class="p">,</span> <span class="n">letter</span><span class="p">,</span> <span class="s1">'go_place_'</span> <span class="o">+</span> <span class="n">letter</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'new_match_reset'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'new_match_reset'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'new_match_reset'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">'find_letter'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">place_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' $-#0123456789~'</span><span class="p">:</span>
+            <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_place_'</span> <span class="o">+</span> <span class="n">place_letter</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_place_'</span> <span class="o">+</span> <span class="n">place_letter</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_place_'</span> <span class="o">+</span> <span class="n">place_letter</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">,</span> <span class="s1">'place_'</span> <span class="o">+</span> <span class="n">place_letter</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'place_'</span> <span class="o">+</span> <span class="n">place_letter</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'move_cap_'</span> <span class="o">+</span> <span class="n">place_letter</span><span class="p">,</span> <span class="n">place_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'move_cap_'</span> <span class="o">+</span> <span class="n">place_letter</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'new_word_go_replace_letter_'</span> <span class="o">+</span> <span class="n">place_letter</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' $-#0123456789~'</span><span class="p">:</span>
+            <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'new_word_go_replace_letter_'</span> <span class="o">+</span> <span class="n">place_letter</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'new_word_go_replace_letter_'</span> <span class="o">+</span> <span class="n">place_letter</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'new_word_go_replace_letter_'</span> <span class="o">+</span> <span class="n">place_letter</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'new_word_copy'</span><span class="p">,</span> <span class="n">place_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'new_word_copy'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">'go_end_new_word'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' $-#0123456789~'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_end_new_word'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_end_new_word'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_end_new_word'</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">,</span> <span class="s1">'first_zero_dash'</span><span class="p">,</span> <span class="s1">'#'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'first_zero_dash'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'first_zero'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'first_zero'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'second_zero_dash'</span><span class="p">,</span> <span class="s1">'0'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'second_zero_dash'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'second_zero'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'second_zero'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'third_zero_dash'</span><span class="p">,</span> <span class="s1">'0'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'third_zero_dash'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'third_zero'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'third_zero'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'one_dash'</span><span class="p">,</span> <span class="s1">'0'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'one_dash'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'one'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'one'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'tild'</span><span class="p">,</span> <span class="s1">'1'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'tild'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'new_word_cap'</span><span class="p">,</span> <span class="s1">'~'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'new_word_cap'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'go_reset_lookup'</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' -#0123456789~'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_reset_lookup'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_reset_lookup'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_reset_lookup'</span><span class="p">,</span> <span class="s1">'$'</span><span class="p">,</span> <span class="s1">'reset_lookup'</span><span class="p">,</span> <span class="s1">'$'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'reset_lookup'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="s1">'go_replace_space'</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' $'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_replace_space'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_replace_space'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_replace_space'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'find_word'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'find_letter'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">'check_if_end_of_word'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' $-#0123456789~'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'check_if_end_of_word'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'check_if_end_of_word'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'check_if_end_of_word'</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="s1">'match_failure_ '</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'check_if_end_of_word'</span><span class="p">,</span> <span class="s1">'@'</span><span class="p">,</span> <span class="s1">'find_tild'</span><span class="p">,</span> <span class="s1">'#'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' $-#0123456789'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'find_tild'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'find_tild'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'find_tild'</span><span class="p">,</span> <span class="s1">'~'</span><span class="p">,</span> <span class="s1">'inc_num'</span><span class="p">,</span> <span class="s1">'~'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'inc_num'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="s1">'inc_num'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="mi">9</span><span class="p">):</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'inc_num'</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="s1">'go_reset_lookup'</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">),</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'inc_num'</span><span class="p">,</span> <span class="s1">'9'</span><span class="p">,</span> <span class="s1">'inc_num'</span><span class="p">,</span> <span class="s1">'0'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'inc_num'</span><span class="p">,</span> <span class="s1">'#'</span><span class="p">,</span> <span class="s1">'WORD_COUNT_EXCEEDED_9999'</span><span class="p">,</span> <span class="s1">'#'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+
+    <span class="c1">### /\ Word count /\</span>
+    <span class="c1">########################</span>
+    <span class="c1">### \/ Stop Words \/</span>
+
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'find_word'</span><span class="p">,</span> <span class="s1">'$'</span><span class="p">,</span> <span class="s1">'check_stop_word_'</span><span class="p">,</span> <span class="s1">'$'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'check_stop_word_'</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="s1">'check_stop_word_'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span> <span class="o">+=</span> <span class="n">getStopWordsRules</span><span class="p">(</span><span class="s1">'check_stop_word_'</span><span class="p">,</span> <span class="n">stop_words</span><span class="p">,</span> <span class="s1">'go_check_stop_word'</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">'-#0123456789'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_check_stop_word'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_check_stop_word'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_check_stop_word'</span><span class="p">,</span> <span class="s1">'~'</span><span class="p">,</span> <span class="s1">'check_stop_word_'</span><span class="p">,</span> <span class="s1">'~'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'check_stop_word_'</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">,</span> <span class="s1">'place_two_four'</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+
+    <span class="c1">### /\ Stop Words /\</span>
+    <span class="c1">########################</span>
+    <span class="c1">### \/ Highest 25 \/</span>
+
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'place_two_four'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'place_four'</span><span class="p">,</span> <span class="s1">'2'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'place_four'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'make_max_register'</span><span class="p">,</span> <span class="s1">'4'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'make_max_register'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'max_register_first_zero_dash'</span><span class="p">,</span> <span class="s1">'|'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'max_register_first_zero_dash'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'max_register_first_zero'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'max_register_first_zero'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'max_register_second_zero_dash'</span><span class="p">,</span> <span class="s1">'0'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'max_register_second_zero_dash'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'max_register_second_zero'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'max_register_second_zero'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'max_register_third_zero_dash'</span><span class="p">,</span> <span class="s1">'0'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'max_register_third_zero_dash'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'max_register_third_zero'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'max_register_third_zero'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'max_register_fourth_zero_dash'</span><span class="p">,</span> <span class="s1">'0'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'max_register_fourth_zero_dash'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'max_register_fourth_zero'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'max_register_fourth_zero'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'cap_max_register'</span><span class="p">,</span> <span class="s1">'0'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'cap_max_register'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'reset_max_register'</span><span class="p">,</span> <span class="s1">'='</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">digit</span> <span class="ow">in</span> <span class="s1">'0123456789'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'reset_max_register'</span><span class="p">,</span> <span class="n">digit</span><span class="p">,</span> <span class="s1">'reset_max_register'</span><span class="p">,</span> <span class="s1">'0'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'reset_max_register'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="s1">'reset_max_register'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'reset_max_register'</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="s1">'reset_max_register'</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'reset_max_register'</span><span class="p">,</span> <span class="s1">'|'</span><span class="p">,</span> <span class="s1">'mark_max_register'</span><span class="p">,</span> <span class="s1">'|'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'mark_max_register'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="s1">'reset_max_search'</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'mark_max_register'</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="s1">'reset_max_search'</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">'-#~0123456789&gt;|'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'reset_max_search'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'reset_max_search'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'reset_max_search'</span><span class="p">,</span> <span class="s1">'@'</span><span class="p">,</span> <span class="s1">'reset_max_search'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'reset_max_search'</span><span class="p">,</span> <span class="s1">'$'</span><span class="p">,</span> <span class="s1">'find_number'</span><span class="p">,</span> <span class="s1">'$'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">'-0123456789~'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'find_number'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'find_number'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'find_number'</span><span class="p">,</span> <span class="s1">'#'</span><span class="p">,</span> <span class="s1">'go_find_digit'</span><span class="p">,</span> <span class="s1">'#'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">skip_digit</span> <span class="ow">in</span> <span class="s1">'0123456789'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_find_digit'</span><span class="p">,</span> <span class="n">skip_digit</span><span class="p">,</span> <span class="s1">'go_find_digit'</span><span class="p">,</span> <span class="n">skip_digit</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_find_digit'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="s1">'find_digit'</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">match_digit</span> <span class="ow">in</span> <span class="s1">'0123456789'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'find_digit'</span><span class="p">,</span> <span class="n">match_digit</span><span class="p">,</span> <span class="s1">'go_match_digit_'</span> <span class="o">+</span> <span class="n">match_digit</span><span class="p">,</span> <span class="n">match_digit</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">'-#~0123456789&gt;|'</span><span class="p">:</span>
+            <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_match_digit_'</span> <span class="o">+</span> <span class="n">match_digit</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_match_digit_'</span> <span class="o">+</span> <span class="n">match_digit</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_match_digit_'</span> <span class="o">+</span> <span class="n">match_digit</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="s1">'match_digit_'</span> <span class="o">+</span> <span class="n">match_digit</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">register_digit</span> <span class="ow">in</span> <span class="s1">'0123456789'</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">match_digit</span> <span class="o">&gt;</span> <span class="n">register_digit</span><span class="p">:</span>
+                <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'match_digit_'</span> <span class="o">+</span> <span class="n">match_digit</span><span class="p">,</span> <span class="n">register_digit</span><span class="p">,</span> <span class="s1">'match_greater'</span><span class="p">,</span> <span class="n">match_digit</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+            <span class="k">elif</span> <span class="n">match_digit</span> <span class="o">&lt;</span> <span class="n">register_digit</span><span class="p">:</span>
+                <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'match_digit_'</span> <span class="o">+</span> <span class="n">match_digit</span><span class="p">,</span> <span class="n">register_digit</span><span class="p">,</span> <span class="s1">'match_less'</span><span class="p">,</span> <span class="n">register_digit</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'match_digit_'</span> <span class="o">+</span> <span class="n">match_digit</span><span class="p">,</span> <span class="n">register_digit</span><span class="p">,</span> <span class="s1">'match_equal'</span><span class="p">,</span> <span class="n">register_digit</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'match_equal'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="s1">'go_get_next_digit'</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">'-#~0123456789&gt;|'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_get_next_digit'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_get_next_digit'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_get_next_digit'</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="s1">'go_find_digit'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'match_equal'</span><span class="p">,</span> <span class="s1">'='</span><span class="p">,</span> <span class="s1">'match_less'</span><span class="p">,</span> <span class="s1">'='</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'match_greater'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="s1">'go_find_copy_digit'</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">'-#~0123456789&gt;|'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_find_copy_digit'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_find_copy_digit'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_find_copy_digit'</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="s1">'go_copy_digit'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">skip_digit</span> <span class="ow">in</span> <span class="s1">'0123456789'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_copy_digit'</span><span class="p">,</span> <span class="n">skip_digit</span><span class="p">,</span> <span class="s1">'go_copy_digit'</span><span class="p">,</span> <span class="n">skip_digit</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_copy_digit'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="s1">'copy_digit'</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">copy_digit</span> <span class="ow">in</span> <span class="s1">'0123456789'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'copy_digit'</span><span class="p">,</span> <span class="n">copy_digit</span><span class="p">,</span> <span class="s1">'go_place_digit_'</span> <span class="o">+</span> <span class="n">copy_digit</span><span class="p">,</span> <span class="n">copy_digit</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">'-#~0123456789&gt;|'</span><span class="p">:</span>
+            <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_place_digit_'</span> <span class="o">+</span> <span class="n">copy_digit</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_place_digit_'</span> <span class="o">+</span> <span class="n">copy_digit</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_place_digit_'</span> <span class="o">+</span> <span class="n">copy_digit</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="s1">'place_digit_'</span> <span class="o">+</span> <span class="n">copy_digit</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">replace_digit</span> <span class="ow">in</span> <span class="s1">'0123456789'</span><span class="p">:</span>
+            <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'place_digit_'</span> <span class="o">+</span> <span class="n">copy_digit</span><span class="p">,</span> <span class="n">replace_digit</span><span class="p">,</span> <span class="s1">'match_greater'</span><span class="p">,</span> <span class="n">copy_digit</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'match_greater'</span><span class="p">,</span> <span class="s1">'='</span><span class="p">,</span> <span class="s1">'copy_reset_max_register'</span><span class="p">,</span> <span class="s1">'='</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="s1">'-0123456789'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'copy_reset_max_register'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'copy_reset_max_register'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'copy_reset_max_register'</span><span class="p">,</span> <span class="s1">'|'</span><span class="p">,</span> <span class="s1">'copy_mark_max_register'</span><span class="p">,</span> <span class="s1">'|'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'copy_mark_max_register'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="s1">'finish_number_copy'</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">'-#~0123456789&gt;|'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'finish_number_copy'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'finish_number_copy'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'finish_number_copy'</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="s1">'label_highest'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">'-0123456789'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'label_highest'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'label_highest'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'label_highest'</span><span class="p">,</span> <span class="s1">'#'</span><span class="p">,</span> <span class="s1">'clear_previous_highest'</span><span class="p">,</span> <span class="s1">'@'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">'-#~0123456789'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'clear_previous_highest'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'clear_previous_highest'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'clear_previous_highest'</span><span class="p">,</span> <span class="s1">'@'</span><span class="p">,</span> <span class="s1">'go_to_highest'</span><span class="p">,</span> <span class="s1">'#'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'clear_previous_highest'</span><span class="p">,</span> <span class="s1">'$'</span><span class="p">,</span> <span class="s1">'go_to_highest'</span><span class="p">,</span> <span class="s1">'$'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">'-#~0123456789'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_to_highest'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_to_highest'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_to_highest'</span><span class="p">,</span> <span class="s1">'@'</span><span class="p">,</span> <span class="s1">'find_number'</span><span class="p">,</span> <span class="s1">'@'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="s1">'-0123456789'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'match_less'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'match_less'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'match_less'</span><span class="p">,</span> <span class="s1">'|'</span><span class="p">,</span> <span class="s1">'less_reset_max_register'</span><span class="p">,</span> <span class="s1">'|'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'less_reset_max_register'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="s1">'go_find_copy_number'</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">'-#~0123456789&gt;|'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_find_copy_number'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_find_copy_number'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_find_copy_number'</span><span class="p">,</span> <span class="s1">'['</span><span class="p">,</span> <span class="s1">'find_number'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'find_number'</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">,</span> <span class="s1">'go_copy_max_word'</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">'-#~0123456789&gt;|'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_copy_max_word'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_copy_max_word'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_copy_max_word'</span><span class="p">,</span> <span class="s1">'@'</span><span class="p">,</span> <span class="s1">'begin_copy_max_word'</span><span class="p">,</span> <span class="s1">'@'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">'-'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'begin_copy_max_word'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'begin_copy_max_word'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'begin_copy_max_word'</span><span class="p">,</span> <span class="s1">'~'</span><span class="p">,</span> <span class="s1">'go_copy_max_letter'</span><span class="p">,</span> <span class="s1">'~'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'begin_copy_max_word'</span><span class="p">,</span> <span class="s1">'$'</span><span class="p">,</span> <span class="s1">'go_copy_max_letter'</span><span class="p">,</span> <span class="s1">'$'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_copy_max_letter'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="s1">'copy_max_letter'</span><span class="p">,</span> <span class="s1">'{'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_copy_max_letter'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_copy_max_letter'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">copy_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'copy_max_letter'</span><span class="p">,</span> <span class="n">copy_letter</span><span class="p">,</span> <span class="s1">'go_place_max_letter_'</span> <span class="o">+</span> <span class="n">copy_letter</span><span class="p">,</span> <span class="n">copy_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' -@#~0123456789&gt;|[=</span><span class="se">\n</span><span class="s1">'</span><span class="p">:</span>
+            <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_place_max_letter_'</span> <span class="o">+</span> <span class="n">copy_letter</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_place_max_letter_'</span> <span class="o">+</span> <span class="n">copy_letter</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_place_max_letter_'</span> <span class="o">+</span> <span class="n">copy_letter</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'go_find_next_letter'</span><span class="p">,</span> <span class="n">copy_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' -@#~0123456789&gt;|[=</span><span class="se">\n</span><span class="s1">'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_find_next_letter'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_find_next_letter'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_find_next_letter'</span><span class="p">,</span> <span class="s1">'{'</span><span class="p">,</span> <span class="s1">'go_copy_max_letter'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_copy_max_letter'</span><span class="p">,</span> <span class="s1">'@'</span><span class="p">,</span> <span class="s1">'place_word_number_spacer1'</span><span class="p">,</span> <span class="s1">'@'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' -@#~0123456789&gt;|[=</span><span class="se">\n</span><span class="s1">'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'place_word_number_spacer1'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'place_word_number_spacer1'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'place_word_number_spacer1'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'place_word_number_spacer2'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'place_word_number_spacer2'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'place_word_number_spacer3'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'place_word_number_spacer3'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'go_get_max_number'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' -@#~0123456789&gt;|[=</span><span class="se">\n</span><span class="s1">'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_get_max_number'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_get_max_number'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_get_max_number'</span><span class="p">,</span> <span class="s1">'@'</span><span class="p">,</span> <span class="s1">'find_first_max_number'</span><span class="p">,</span> <span class="s1">'@'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'find_first_max_number'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="s1">'find_first_max_number'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'find_first_max_number'</span><span class="p">,</span> <span class="s1">'0'</span><span class="p">,</span> <span class="s1">'find_first_max_number'</span><span class="p">,</span> <span class="s1">'0'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">digit</span> <span class="ow">in</span> <span class="s1">'123456789'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'find_first_max_number'</span><span class="p">,</span> <span class="n">digit</span><span class="p">,</span> <span class="s1">'found_first_max_number'</span><span class="p">,</span> <span class="n">digit</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'found_first_max_number'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="s1">'copy_max_digit'</span><span class="p">,</span> <span class="s1">'{'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">copy_digit</span> <span class="ow">in</span> <span class="s1">'0123456789'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'copy_max_digit'</span><span class="p">,</span> <span class="n">copy_digit</span><span class="p">,</span> <span class="s1">'go_place_max_digit_'</span> <span class="o">+</span> <span class="n">copy_digit</span><span class="p">,</span> <span class="n">copy_digit</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' -#~0123456789&gt;|[=</span><span class="se">\n</span><span class="s1">'</span><span class="p">:</span>
+            <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_place_max_digit_'</span> <span class="o">+</span> <span class="n">copy_digit</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_place_max_digit_'</span> <span class="o">+</span> <span class="n">copy_digit</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_place_max_digit_'</span> <span class="o">+</span> <span class="n">copy_digit</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'go_find_max_digit'</span><span class="p">,</span> <span class="n">copy_digit</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' -#~0123456789&gt;|[=</span><span class="se">\n</span><span class="s1">'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_find_max_digit'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_find_max_digit'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_find_max_digit'</span><span class="p">,</span> <span class="s1">'{'</span><span class="p">,</span> <span class="s1">'go_copy_max_digit'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">skip_digit</span> <span class="ow">in</span> <span class="s1">'0123456789'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_copy_max_digit'</span><span class="p">,</span> <span class="n">skip_digit</span><span class="p">,</span> <span class="s1">'go_copy_max_digit'</span><span class="p">,</span> <span class="n">skip_digit</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_copy_max_digit'</span><span class="p">,</span> <span class="s1">'-'</span><span class="p">,</span> <span class="s1">'copy_max_digit'</span><span class="p">,</span> <span class="s1">'{'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_copy_max_digit'</span><span class="p">,</span> <span class="s1">'~'</span><span class="p">,</span> <span class="s1">'go_place_line_break'</span><span class="p">,</span> <span class="s1">'~'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' -#~0123456789&gt;|[=</span><span class="se">\n</span><span class="s1">'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_place_line_break'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_place_line_break'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_place_line_break'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'go_decrement_twenty_four'</span><span class="p">,</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' -0123456789[=</span><span class="se">\n</span><span class="s1">'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_decrement_twenty_four'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_decrement_twenty_four'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_decrement_twenty_four'</span><span class="p">,</span> <span class="s1">'|'</span><span class="p">,</span> <span class="s1">'decrement_twenty_four'</span><span class="p">,</span> <span class="s1">'|'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">digit</span> <span class="ow">in</span> <span class="s1">'123456789'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'decrement_twenty_four'</span><span class="p">,</span> <span class="n">digit</span><span class="p">,</span> <span class="s1">'go_reset_max_register'</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">digit</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">),</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'decrement_twenty_four'</span><span class="p">,</span> <span class="s1">'0'</span><span class="p">,</span> <span class="s1">'decrement_twenty_four'</span><span class="p">,</span> <span class="s1">'9'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="s1">'-0123456789|['</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_reset_max_register'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_reset_max_register'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_reset_max_register'</span><span class="p">,</span> <span class="s1">'='</span><span class="p">,</span> <span class="s1">'reset_max_register'</span><span class="p">,</span> <span class="s1">'='</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_copy_max_word'</span><span class="p">,</span> <span class="s1">'$'</span><span class="p">,</span> <span class="s1">'go_mark_mass_copy_start'</span><span class="p">,</span> <span class="s1">'$'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'decrement_twenty_four'</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">,</span> <span class="s1">'go_mark_mass_copy_start'</span><span class="p">,</span> <span class="s1">'&gt;'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">'$ -~0123456789#@'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_mark_mass_copy_start'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_mark_mass_copy_start'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_mark_mass_copy_start'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'erase_first_space'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'erase_first_space'</span><span class="p">,</span> <span class="s1">' '</span><span class="p">,</span> <span class="s1">'mark_mass_copy_start'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">'$ -~0123456789#@&gt;|['</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'mark_mass_copy_start'</span><span class="p">,</span> <span class="n">letter</span><span class="p">,</span> <span class="s1">'go_find_mass_copy'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_find_mass_copy'</span><span class="p">,</span> <span class="n">letter</span><span class="p">,</span> <span class="s1">'go_find_mass_copy'</span><span class="p">,</span> <span class="n">letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_find_mass_copy'</span><span class="p">,</span> <span class="s1">'='</span><span class="p">,</span> <span class="s1">'go_mass_copy'</span><span class="p">,</span> <span class="s1">'='</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_mass_copy'</span><span class="p">,</span> <span class="s1">'='</span><span class="p">,</span> <span class="s1">'go_mass_copy'</span><span class="p">,</span> <span class="s1">'='</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">copy_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' -0123456789</span><span class="se">\n</span><span class="s1">'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_mass_copy'</span><span class="p">,</span> <span class="n">copy_letter</span><span class="p">,</span> <span class="s1">'go_place_mass_letter_'</span> <span class="o">+</span> <span class="n">copy_letter</span><span class="p">,</span> <span class="s1">'='</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">'$ -~0123456789#@&gt;|[='</span><span class="p">:</span>
+            <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_place_mass_letter_'</span> <span class="o">+</span> <span class="n">copy_letter</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'go_place_mass_letter_'</span> <span class="o">+</span> <span class="n">copy_letter</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_place_mass_letter_'</span> <span class="o">+</span> <span class="n">copy_letter</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'mark_mass_copy_start'</span><span class="p">,</span> <span class="n">copy_letter</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'go_mass_copy'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'clear_end'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">clear_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">'$ -~0123456789#@&gt;|[='</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'clear_end'</span><span class="p">,</span> <span class="n">clear_letter</span><span class="p">,</span> <span class="s1">'clear_end'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'clear_end'</span><span class="p">,</span> <span class="s1">'*'</span><span class="p">,</span> <span class="s1">'clear_end2'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'clear_end2'</span><span class="p">,</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="s1">'find_beginning'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">skip_letter</span> <span class="ow">in</span> <span class="n">string</span><span class="o">.</span><span class="n">ascii_lowercase</span> <span class="o">+</span> <span class="s1">' -0123456789</span><span class="se">\n</span><span class="s1">'</span><span class="p">:</span>
+        <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'find_beginning'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="s1">'find_beginning'</span><span class="p">,</span> <span class="n">skip_letter</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">rules</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="s1">'find_beginning'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="s1">'DONE'</span><span class="p">,</span> <span class="s1">'+'</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+
+    <span class="k">return</span> <span class="n">rules</span>
+
+
+<span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">save_rules_to_file</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">user_stepthrough</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+
+    <span class="n">charset</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>
+        <span class="n">charset</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="s1">'+'</span> <span class="ow">in</span> <span class="n">charset</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">"'+' in charset"</span><span class="p">)</span>
+
+    <span class="n">stop_words</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'able'</span><span class="p">,</span> <span class="s1">'about'</span><span class="p">,</span> <span class="s1">'across'</span><span class="p">,</span> <span class="s1">'after'</span><span class="p">,</span> <span class="s1">'all'</span><span class="p">,</span> <span class="s1">'almost'</span><span class="p">,</span>
+                  <span class="s1">'also'</span><span class="p">,</span> <span class="s1">'am'</span><span class="p">,</span> <span class="s1">'among'</span><span class="p">,</span> <span class="s1">'an'</span><span class="p">,</span> <span class="s1">'and'</span><span class="p">,</span> <span class="s1">'any'</span><span class="p">,</span> <span class="s1">'are'</span><span class="p">,</span> <span class="s1">'as'</span><span class="p">,</span>
+                  <span class="s1">'at'</span><span class="p">,</span> <span class="s1">'be'</span><span class="p">,</span> <span class="s1">'because'</span><span class="p">,</span> <span class="s1">'been'</span><span class="p">,</span> <span class="s1">'but'</span><span class="p">,</span> <span class="s1">'by'</span><span class="p">,</span> <span class="s1">'can'</span><span class="p">,</span> <span class="s1">'cannot'</span><span class="p">,</span>
+                  <span class="s1">'could'</span><span class="p">,</span> <span class="s1">'dear'</span><span class="p">,</span> <span class="s1">'did'</span><span class="p">,</span> <span class="s1">'do'</span><span class="p">,</span> <span class="s1">'does'</span><span class="p">,</span> <span class="s1">'either'</span><span class="p">,</span> <span class="s1">'else'</span><span class="p">,</span>
+                  <span class="s1">'ever'</span><span class="p">,</span> <span class="s1">'every'</span><span class="p">,</span> <span class="s1">'for'</span><span class="p">,</span> <span class="s1">'from'</span><span class="p">,</span> <span class="s1">'get'</span><span class="p">,</span> <span class="s1">'got'</span><span class="p">,</span> <span class="s1">'had'</span><span class="p">,</span> <span class="s1">'has'</span><span class="p">,</span>
+                  <span class="s1">'have'</span><span class="p">,</span> <span class="s1">'he'</span><span class="p">,</span> <span class="s1">'her'</span><span class="p">,</span> <span class="s1">'hers'</span><span class="p">,</span> <span class="s1">'him'</span><span class="p">,</span> <span class="s1">'his'</span><span class="p">,</span> <span class="s1">'how'</span><span class="p">,</span> <span class="s1">'however'</span><span class="p">,</span>
+                  <span class="s1">'i'</span><span class="p">,</span> <span class="s1">'if'</span><span class="p">,</span> <span class="s1">'in'</span><span class="p">,</span> <span class="s1">'into'</span><span class="p">,</span> <span class="s1">'is'</span><span class="p">,</span> <span class="s1">'it'</span><span class="p">,</span> <span class="s1">'its'</span><span class="p">,</span> <span class="s1">'just'</span><span class="p">,</span> <span class="s1">'least'</span><span class="p">,</span>
+                  <span class="s1">'let'</span><span class="p">,</span> <span class="s1">'like'</span><span class="p">,</span> <span class="s1">'likely'</span><span class="p">,</span> <span class="s1">'may'</span><span class="p">,</span> <span class="s1">'me'</span><span class="p">,</span> <span class="s1">'might'</span><span class="p">,</span> <span class="s1">'most'</span><span class="p">,</span>
+                  <span class="s1">'must'</span><span class="p">,</span> <span class="s1">'my'</span><span class="p">,</span> <span class="s1">'neither'</span><span class="p">,</span> <span class="s1">'no'</span><span class="p">,</span> <span class="s1">'nor'</span><span class="p">,</span> <span class="s1">'not'</span><span class="p">,</span> <span class="s1">'of'</span><span class="p">,</span> <span class="s1">'off'</span><span class="p">,</span>
+                  <span class="s1">'often'</span><span class="p">,</span> <span class="s1">'on'</span><span class="p">,</span> <span class="s1">'only'</span><span class="p">,</span> <span class="s1">'or'</span><span class="p">,</span> <span class="s1">'other'</span><span class="p">,</span> <span class="s1">'our'</span><span class="p">,</span> <span class="s1">'own'</span><span class="p">,</span> <span class="s1">'rather'</span><span class="p">,</span>
+                  <span class="s1">'said'</span><span class="p">,</span> <span class="s1">'say'</span><span class="p">,</span> <span class="s1">'says'</span><span class="p">,</span> <span class="s1">'she'</span><span class="p">,</span> <span class="s1">'should'</span><span class="p">,</span> <span class="s1">'since'</span><span class="p">,</span> <span class="s1">'so'</span><span class="p">,</span>
+                  <span class="s1">'some'</span><span class="p">,</span> <span class="s1">'than'</span><span class="p">,</span> <span class="s1">'that'</span><span class="p">,</span> <span class="s1">'the'</span><span class="p">,</span> <span class="s1">'their'</span><span class="p">,</span> <span class="s1">'them'</span><span class="p">,</span> <span class="s1">'then'</span><span class="p">,</span>
+                  <span class="s1">'there'</span><span class="p">,</span> <span class="s1">'these'</span><span class="p">,</span> <span class="s1">'they'</span><span class="p">,</span> <span class="s1">'this'</span><span class="p">,</span> <span class="s1">'tis'</span><span class="p">,</span> <span class="s1">'to'</span><span class="p">,</span> <span class="s1">'too'</span><span class="p">,</span> <span class="s1">'twas'</span><span class="p">,</span>
+                  <span class="s1">'us'</span><span class="p">,</span> <span class="s1">'wants'</span><span class="p">,</span> <span class="s1">'was'</span><span class="p">,</span> <span class="s1">'we'</span><span class="p">,</span> <span class="s1">'were'</span><span class="p">,</span> <span class="s1">'what'</span><span class="p">,</span> <span class="s1">'when'</span><span class="p">,</span> <span class="s1">'where'</span><span class="p">,</span>
+                  <span class="s1">'which'</span><span class="p">,</span> <span class="s1">'while'</span><span class="p">,</span> <span class="s1">'who'</span><span class="p">,</span> <span class="s1">'whom'</span><span class="p">,</span> <span class="s1">'why'</span><span class="p">,</span> <span class="s1">'will'</span><span class="p">,</span> <span class="s1">'with'</span><span class="p">,</span>
+                  <span class="s1">'would'</span><span class="p">,</span> <span class="s1">'yet'</span><span class="p">,</span> <span class="s1">'you'</span><span class="p">,</span> <span class="s1">'your'</span><span class="p">]</span>
+
+    <span class="n">rules</span> <span class="o">=</span> <span class="n">generateRules</span><span class="p">(</span><span class="n">charset</span><span class="p">,</span> <span class="n">stop_words</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s1">'--------------------------</span><span class="se">\n</span><span class="s1">'</span>
+        <span class="k">print</span> <span class="s1">'{} rules generated.'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">rules</span><span class="p">))</span>
+
+    <span class="k">if</span> <span class="n">save_rules_to_file</span><span class="p">:</span>
+        <span class="n">rules_string</span>  <span class="o">=</span> <span class="s1">' Current State                | Read  |: New State                    | Write | Move  </span><span class="se">\n</span><span class="s1">'</span>
+        <span class="n">rules_string</span> <span class="o">+=</span> <span class="s1">'------------------------------|-------|:------------------------------|-------|-------</span><span class="se">\n</span><span class="s1">'</span>
+        <span class="n">rules_string</span> <span class="o">+=</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">' {:28} | {:5} |: {:28} | {:5} | {:5} '</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">thing</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">'</span><span class="se">\n</span><span class="s1">'</span><span class="p">,</span> <span class="s1">'</span><span class="se">\\</span><span class="s1">n'</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">' '</span><span class="p">,</span> <span class="s1">'SPACE'</span><span class="p">)</span> <span class="k">for</span> <span class="n">thing</span> <span class="ow">in</span> <span class="n">rule</span><span class="p">])</span> <span class="k">for</span> <span class="n">rule</span> <span class="ow">in</span> <span class="n">rules</span><span class="p">])</span>
+        <span class="nb">open</span><span class="p">(</span><span class="s1">'rules.txt'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">rules_string</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
+            <span class="k">print</span> <span class="s1">'Rules saved to file rules.txt.'</span>
+
+
+    <span class="n">tm</span> <span class="o">=</span> <span class="n">TuringMachine</span><span class="p">(</span><span class="n">rules</span><span class="p">,</span> <span class="n">start_state</span><span class="o">=</span><span class="s1">'scrub'</span><span class="p">,</span> <span class="n">start_tape</span><span class="o">=</span><span class="n">s</span><span class="p">,</span> <span class="n">default_slot_value</span><span class="o">=</span><span class="s1">'+'</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">user_stepthrough</span><span class="p">:</span>
+        <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+            <span class="k">print</span> <span class="n">tm</span>
+            <span class="n">user_input</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">user_input</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">'finish'</span><span class="p">,</span> <span class="s1">'fin'</span><span class="p">,</span> <span class="s1">'f'</span><span class="p">):</span>
+                <span class="k">break</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">user_input</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">user_input</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+                    <span class="n">tm</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
+            <span class="n">tm</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
+
+    <span class="n">epoch</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span>
+    <span class="k">while</span> <span class="ow">not</span> <span class="n">tm</span><span class="o">.</span><span class="n">halt</span><span class="p">:</span>
+        <span class="n">tm</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
+    <span class="n">elapsed</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">epoch</span>
+
+    <span class="k">if</span> <span class="n">verbose</span><span class="p">:</span>
+        <span class="k">print</span>
+        <span class="k">print</span> <span class="s1">'Halted after {:.2f}s on step {}.'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">elapsed</span><span class="p">,</span> <span class="n">tm</span><span class="o">.</span><span class="n">steps</span><span class="p">)</span>
+        <span class="k">print</span> <span class="s1">'State: {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">tm</span><span class="o">.</span><span class="n">state</span><span class="p">)</span>
+        <span class="k">print</span> <span class="s1">'Read: {}'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">tm</span><span class="p">[</span><span class="n">tm</span><span class="o">.</span><span class="n">index</span><span class="p">])</span>
+        <span class="k">print</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">Tape Printout:'</span>
+
+    <span class="k">return</span> <span class="n">tm</span><span class="o">.</span><span class="n">get_whole_printout</span><span class="p">()</span>
+
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">argv</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s1">'Usage:</span><span class="se">\n</span><span class="s1">$ python frequency.py &lt;filename&gt;'</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">input_string</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+        <span class="k">print</span> <span class="n">parse</span><span class="p">(</span><span class="n">input_string</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="p">(</span><span class="s1">'-v'</span> <span class="ow">in</span> <span class="n">argv</span><span class="p">),</span> <span class="n">save_rules_to_file</span><span class="o">=</span><span class="p">(</span><span class="s1">'-s'</span> <span class="ow">in</span> <span class="n">argv</span><span class="p">),</span> <span class="n">user_stepthrough</span><span class="o">=</span><span class="p">(</span><span class="s1">'-u'</span> <span class="ow">in</span> <span class="n">argv</span><span class="p">))</span>
+        <span class="k">if</span> <span class="p">(</span><span class="s1">'-v'</span> <span class="ow">in</span> <span class="n">argv</span><span class="p">):</span>
+            <span class="k">print</span> <span class="s1">'</span><span class="se">\n</span><span class="s1">--------------------------'</span>
+
+<span class="k">if</span> <span class="vm">__name__</span><span class="o">==</span><span class="s1">'__main__'</span><span class="p">:</span>
+    <span class="kn">import</span> <span class="nn">doctest</span>
+    <span class="n">doctest</span><span class="o">.</span><span class="n">testmod</span><span class="p">()</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+
+<h2>When Run</h2>
+
+<p>-</p>
+
+<h4>input.txt</h4>
+
+<p>Song by Raffi</p>
+
+<pre><code>I like to eat, eat, eat apples and bananas
+I like to eat, eat, eat apples and bananas
+I like to ate, ate, ate epples and benenes
+I like to ate, ate, ate epples and benenes
+I like to eat, eat, eat eepples and beeneenees
+I like to eat, eat, eat eepples and beeneenees
+And I like to ite, ite, ite ipples and bininis
+I like to ite, ite, ite ipples and bininis
+I like to ote, ote, ote, oplles and bononos
+I like to ote, ote, ote, oplles and bononos
+And I like to ute, ute, ute upples and bununus
+I like to ute, ute, ute upples and bununus
+</code></pre>
+
+<h4>Run</h4>
+
+<pre><code>$ python frequency.py input.txt
+eat - 12
+ate - 6
+ite - 6
+ote - 6
+ute - 6
+apples - 2
+bananas - 2
+epples - 2
+benenes - 2
+eepples - 2
+beeneenees - 2
+ipples - 2
+bininis - 2
+oplles - 2
+bononos - 2
+upples - 2
+bununus - 2
+</code></pre>
+
+<h4>Run without stop words</h4>
+
+<pre><code>$ python frequency.py input.txt
+and - 14
+i - 12
+like - 12
+to - 12
+eat - 12
+ate - 6
+ite - 6
+ote - 6
+ute - 6
+apples - 2
+bananas - 2
+epples - 2
+benenes - 2
+eepples - 2
+beeneenees - 2
+ipples - 2
+bininis - 2
+oplles - 2
+bononos - 2
+upples - 2
+bununus - 2
+</code></pre>
+
+
+
+  <div id="modified" style="clear:right">
+    <a href="https://cs.marlboro.college/">https://cs.marlboro.college</a>&nbsp;<a href="https://cs.marlboro.college/cours">/cours</a>&nbsp;<a href="https://cs.marlboro.college/cours/spring2018">/spring2018</a>&nbsp;<a href="https://cs.marlboro.college/cours/spring2018/workshop">/workshop</a>&nbsp;<a href="https://cs.marlboro.college/cours/spring2018/workshop/students">/students</a>&nbsp;<a href="https://cs.marlboro.college/cours/spring2018/workshop/students/mkatz">/mkatz</a>&nbsp;<a href="https://cs.marlboro.college/cours/spring2018/workshop/students/mkatz/work">/work</a>&nbsp;<a href="https://cs.marlboro.college/cours/spring2018/workshop/students/mkatz/work/8">/8</a>
+  
+    <br> last modified Sun May 10 2020 7:00 am
+  
+  </div>
+ </div>
+ 
+
+ <div class="footer">
+   <ul>
+  <li> <b><a href="https://cs.marlboro.college/cours/site/docs/help">help</a></b> |
+       <a href="https://cs.marlboro.college/cours/site/docs/about">about &amp; ©</a> |
+
+       2020-05-10
+  </li>
+</ul>
+ </div>
+</div>
+
+
+
+</body></html>
