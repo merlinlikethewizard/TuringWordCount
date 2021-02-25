@@ -49,6 +49,8 @@ So I wrote a turing machine! Okay, technically I used python to generate the tur
 but I still count it. The resulting program has more than 20k instructions and is not fast.
 But it basically works!
 
+```frequency.py``` generates the rules and runs them. The full list of rules is saved in rules.txt.
+
 ## Test
 input.txt
 ```
