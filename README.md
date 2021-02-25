@@ -50,6 +50,22 @@ but I still count it. The resulting program has more than 20k instructions and i
 But it basically works!
 
 ## Test
+input.txt
+```
+I like to eat, eat, eat apples and bananas
+I like to eat, eat, eat apples and bananas
+I like to ate, ate, ate epples and benenes
+I like to ate, ate, ate epples and benenes
+I like to eat, eat, eat eepples and beeneenees
+I like to eat, eat, eat eepples and beeneenees
+And I like to ite, ite, ite ipples and bininis
+I like to ite, ite, ite ipples and bininis
+I like to ote, ote, ote, oplles and bononos
+I like to ote, ote, ote, oplles and bononos
+And I like to ute, ute, ute upples and bununus
+I like to ute, ute, ute upples and bununus
+```
+run:
 ```
 $ python frequency.py input.txt
 eat - 12
@@ -70,3 +86,4 @@ bononos - 2
 upples - 2
 bununus - 2
 ```
+yay!
